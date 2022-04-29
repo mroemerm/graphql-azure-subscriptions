@@ -13,6 +13,6 @@
     "build:cosmos": "cd packages/graphql-cosmosdb-subscriptions && npm run build",
     "build:signalr": "cd packages/graphql-signalr-subscriptions && npm run build",
     "build": "concurrently -c 'bgGreen.dim,bgCyan.dim' 'npm:build:cosmos' 'npm:build:signalr'",
-    "postinstall": "[ -d '.husky' ] && husky install || true"
+    "postinstall": "is-ci || husky install"
   }
 }
