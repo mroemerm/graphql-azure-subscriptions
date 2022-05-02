@@ -2,7 +2,6 @@
   "private": true,
   "devDependencies": {
     "concurrently": "^6.0.0",
-    "husky": "^5.0.9",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
   },
